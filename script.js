@@ -1,9 +1,9 @@
-const daysE1 = document.getElementById('days');
-const hoursE1 = document.getElementById('hours');
-const minsE1 = document.getElementById('mins');
-const secondsE1 = document.getElementById('seconds');
+const daysE1 = document.getElementById('days'); //contagem de dias
+const hoursE1 = document.getElementById('hours'); //contagem de horas
+const minsE1 = document.getElementById('mins'); //contagem de minutos
+const secondsE1 = document.getElementById('seconds'); //contagem de segundos
 
-const newYears = "1 Jan 2022";
+const newYears = "1 Jan 2022"; //data prevista até que chegue a contagem obs: pode ser negativa
 
 function countdown() {
   const newYearsDate = new Date(newYears);
@@ -16,7 +16,7 @@ function countdown() {
   const mins = Math.floor(totalSeconds / 60) % 60;
   const seconds = Math.floor(totalSeconds) % 60;
 
-  console.log(days, hours, mins, seconds);
+  console.log(days, hours, mins, seconds);  //demonstra no console a contagem  também
 
   daysE1.innerHTML = days;
   hoursE1.innerHTML = formatTime(hours);
